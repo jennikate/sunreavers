@@ -26,7 +26,7 @@ $(() => {
 	const $input_additional_skills_3 = $('#input_additional_skills_3'); 
 	const $input_languages_1 = $('#input_languages_1'); 
 	const $input_languages_2 = $('#input_languages_2'); 
-	const $iconstnput_languages_3 = $('#iconstnput_languages_3'); 
+	const $input_languages_3 = $('#input_languages_3'); 
 	const $input_languages_4 = $('#input_languages_4'); 
 	const $input_mentors_1 = $('#input_mentors_1'); 
 	const $input_mentors_2 = $('#input_mentors_2'); 
@@ -142,7 +142,7 @@ $(() => {
 		$additional_skills_3.text($input_additional_skills_3.val());
 		$languages_1.text($input_languages_1.val());
 		$languages_2.text($input_languages_2.val());
-		$languages_3.text($iconstnput_languages_3.val());
+		$languages_3.text($input_languages_3.val());
 		$languages_4.text($input_languages_4.val());
 		$mentors_1.text($input_mentors_1.val());
 		$mentors_2.text($input_mentors_2.val());
