@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Sunreaver Guild Service Record</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
 
 
 
@@ -13,9 +14,9 @@
 <body>
 
 	<section>
-		<div class="container">
+		<div class="container input">
 			<h1>Sunreaver Service Record Creator</h1>
-			<form id="creator" name="creator" method="post">
+			<form id="creator" name="creator" method="post" onsubmit="return false;">
 				<div class="form_section">
 					<p>Fill out the details below for your character.</p>
 					<p>For reference or inspiration you can see Kyandrial's and Delabellora's on the right.</p>
@@ -182,12 +183,107 @@
 					</ul>
 				</div>
 
-			 	<input class="update_record" type="submit" value="Submit">
+			 	<button id="populateForm">Populate Records</button>
 
 			</form>
 		</div>
 	</section>
+	<section>
+		<div class="container results">
+			
+			<div class="column">
+				<h1>Service Record</h1>
+				<div class="name_rank">
+					<ul>
+						<li id="ref_img_link"> </li>
+						<li id="first_name"> </li>
+						<li id="last_name"> </li>
+						<li id="rank"> </li>
+					</ul>
+				</div>
+				<div class="age_height">
+					<ul>
+						<li><p class="title">Age:</p><p id="age"></p></li>
+						<li><p class="title">Height:</p><p id="height"></p></li>
+						<li><p class="title">Date of Birth:</p><p id="dob"><span>/</span><span id="dob_month"></span></p></li>	
+					</ul>
+				</div>		
+				<div class="normal_section">
+					<p class="title">Next of Kin:</p>
+					<ul>			 	
+						<li id="next_of_kin_1"> </li>
+						<li id="next_of_kin_2"> </li>
+					</ul>
+				<div class="normal_section">
+					<p class="title">Residence:</p>
+					<ul>
+						<li id="residence"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Place of Birth:</p>
+					<ul>
+						<li id="place_of_birth"> </li>
+					</ul>
+				</div>
+			</div>
 
+			<div class="column">
+				<div class="normal_section">
+					<p class="title">Primary Specialisation:</p>
+					<ul>
+						<li id="primary_specialisations_1"> </li>
+						<li id="primary_specialisations_2"> </li>
+						<li id="primary_specialisations_3"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Additional Skills:</p>
+					<li id="additional_skills_1"> </li>
+					<li id="additional_skills_2"> </li>
+					<li id="additional_skills_3"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Languages:</p>
+					<li id="languages_1"> </li>
+					<li id="languages_2"> </li>
+					<li id="languages_3"> </li>
+					<li id="languages_4"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Mentors:</p>	
+					<li id="mentors_1"> </li>		
+					<li id="mentors_2"> </li>		
+					<li id="mentors_3"> </li>		
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Additional Information:</p>
+					<li id="additional_info_1"> </li>
+					<li id="additional_info_2"> </li>
+					<li id="additional_info_3"> </li>
+				</ul>
+			</div>
+
+			</div class="column">
+				<div class="normal_section">
+					<p class="title">Notable Positions:</p>
+					<ul>
+						<li id="organisation"> </li>
+						<li id="position"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Discredit Note:</p>
+					<ul>
+						<li id="discredit"> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 </body>
