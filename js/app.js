@@ -28,6 +28,7 @@ $(() => {
 	const $input_languages_2 = $('#input_languages_2'); 
 	const $input_languages_3 = $('#input_languages_3'); 
 	const $input_languages_4 = $('#input_languages_4'); 
+	const $input_languages_5 = $('#input_languages_5'); 
 	const $input_mentors_1 = $('#input_mentors_1'); 
 	const $input_mentors_2 = $('#input_mentors_2'); 
 	const $input_mentors_3 = $('#input_mentors_3'); 
@@ -83,6 +84,7 @@ $(() => {
 	const $languages_2 = $('#languages_2');
 	const $languages_3 = $('#languages_3');
 	const $languages_4 = $('#languages_4');
+	const $languages_5 = $('#languages_5');
 	const $mentors_1 = $('#mentors_1');
 	const $mentors_2 = $('#mentors_2');
 	const $mentors_3 = $('#mentors_3');
@@ -144,6 +146,7 @@ $(() => {
 		$languages_2.text($input_languages_2.val());
 		$languages_3.text($input_languages_3.val());
 		$languages_4.text($input_languages_4.val());
+		$languages_5.text($input_languages_5.val());
 		$mentors_1.text($input_mentors_1.val());
 		$mentors_2.text($input_mentors_2.val());
 		$mentors_3.text($input_mentors_3.val());
