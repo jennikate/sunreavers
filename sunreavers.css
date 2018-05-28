@@ -125,6 +125,9 @@ body, .instructions {
 .age_height ul li {
 	margin-right: 35px;
 }
+.age_height span {
+	font-style: none !important;
+}
 
 /*============================
    Fonts
@@ -252,4 +255,9 @@ button {
 button:hover {
   background: #f2c539;
   text-decoration: none;
+}
+
+#organisation_1, #organisation_2, #organisation_3 {
+	margin-top: 10px;
+	margin-bottom: 0px;
 }
