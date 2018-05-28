@@ -46,10 +46,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*============================
-   Base
+   Containers
 =============================*/
 
 body {
@@ -57,21 +68,119 @@ body {
 }
 
 .container {
-	/*background-image: url("https://cdn.discordapp.com/attachments/177825596951363585/450302939886518272/eversong_woods.jpg");
-	*/
+	background-image: url("https://cdn.discordapp.com/attachments/177825596951363585/450302939886518272/eversong_woods.jpg");
 	background-color: black;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 	margin: 10px auto;
 	width: 1000px;
+	height: 768px;
 	display: flex;
-	background-color: white;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 	align-items: stretch;
 }
 
 .column {
-	width: 30%;
-	background-color: white;
+	width: 32%;
+	background-color: #FFFFFF;
+	border: 10px solid #fff2e6;
+	margin: 8px 5px;
+	padding: 15px 10px;
+}
+
+.normal_section {
+	border-top: 1px solid #D6D3C7;
+	padding: 10px 0;
+}
+
+.name_rank {
+	border-top: 3px solid #D6D3C7;
+	padding: 10px 0;
+}
+#name_block{
+	display: flex;
+	justify-content: center;
+  	flex-direction: column;
+  	height: 200px;
+}
+.age_height ul {
+	display: flex;
+	flex-direction: row;
+}
+.age_height ul li {
+	margin-right: 35px;
+}
+
+/*============================
+   Fonts
+=============================*/
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Open+Sans');
+
+body { 
+	font-family: 'IM Fell French Canon SC', serif;
+	color: #61534A; 
+	font-size: 20px;
+}
+.title { 
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	font-weight: bold;
+	color: #806D60;
+	margin-bottom: 5px;
+}
+
+h1 {
+	text-align: center;
+	color: #806D60;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+#first_name, #last_name { 
+	font-size: 1.25em; 
+	text-align: center;
+	text-transform: uppercase;
+}
+#rank { 
+	font-size: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+/*============================
+   Image & Name
+=============================*/
+
+#img_link {
+	height: 200px;
+	margin-right: 5px;
+	float: left;
+}
+#last_name {
+	margin-bottom: 20px;
+}
+
+
+/*============================
+   Lists & Text
+=============================*/
+
+p, li {
+	margin-bottom: 5px;
+}
+
+ul.bulleted {
+	list-style: disc;
+	font-size: 0.75em;
+	margin-left: 25px;
+	margin-bottom: 5px;
+	padding: 5px 0 0 0;
+}
+
+li:empty {
+	display:none;
 }
 
