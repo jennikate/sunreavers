@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <title>Sunreaver Guild Service Record</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
 <link rel="stylesheet" href="sunreavers.css">
 <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC" rel="stylesheet">
+
 
 
 
@@ -15,9 +17,9 @@
 <body>
 
 	<section>
-		<div class="container">
+		<div class="container input">
 			<h1>Sunreaver Service Record Creator</h1>
-			<form id="creator" name="creator" method="post">
+			<form id="creator" name="creator" method="post" onsubmit="return false;">
 				<div class="form_section">
 					<p>Fill out the details below for your character.</p>
 					<p>For reference or inspiration you can see Kyandrial's and Delabellora's on the right.</p>
@@ -164,32 +166,222 @@
 					<ul>
 						<li>
 							 <label for="input_organisation">Organisation <span>e.g. Kirin Tor, Sunreavers, Farstiders, Dawnguard, etc.</span></label>
-			 				 <input type="text" name="input_organisation" id="input_organisation">
+			 				 <input type="text" name="input_organisation" id="input_organisation_1">
 			 			</li>
-			 			<li><button class="add_another" id="add_organisation">Add another organisation</button></li>	
 			 			<li class="position">
 							 <label for="input_position">Position</label>
-			 				 <input type="text" name="input_position" id="input_position">
+			 				 <input type="text" name="input_position" id="input_position_11">
 			 			</li>
-			 			<li><button class="add_another" id="add_position">Add another position</button></li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_12">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_13">
+			 			</li>
+			 			<li>
+							 <label for="input_organisation">Organisation 2</label>
+			 				 <input type="text" name="input_organisation" id="input_organisation_2">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_21">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_22">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_23">
+			 			</li>
+			 			<li>
+							 <label for="input_organisation">Organisation 3</label>
+			 				 <input type="text" name="input_organisation" id="input_organisation_3">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_31">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_32">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_33">
+			 			</li>
+			 			<li>
+							 <label for="input_organisation">Organisation 3</label>
+			 				 <input type="text" name="input_organisation" id="input_organisation_4">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_41">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_42">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_43">
+			 			</li>
+			 			<li>
+							 <label for="input_organisation">Organisation 3</label>
+			 				 <input type="text" name="input_organisation" id="input_organisation_5">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_51">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_52">
+			 			</li>
+			 			<li class="position">
+							 <label for="input_position">Position</label>
+			 				 <input type="text" name="input_position" id="input_position_53">
+			 			</li>
 					</ul>
 					<h2>Notable Discredits</h2>	
 					<p>Has your character been reprimanded for accidentally burning down a tree while training? Perhaps they enchanted a broom that wouldn't stop sweeping the teacher away - here's a spot for a few of the more notable 'mistakes' they've made!</p>
 					<ul>
 						<li class="discredit">
-							 <label for="input_discredit">Position</label>
+							 <label for="input_discredit">Discredit</label>
 			 				 <input type="text" name="input_discredit" id="input_discredit">
 			 			</li>
-			 			<li><button class="add_another" id="add_discredit">Add another discredit</button></li>
+			 			<li class="discredit">
+							 <label for="input_discredit">2#</label>
+			 				 <input type="text" name="input_discredit" id="input_discredit2">
+			 			</li>
+			 			<li class="discredit">
+							 <label for="input_discredit">3#</label>
+			 				 <input type="text" name="input_discredit" id="input_discredit3">
+			 			</li>
 					</ul>
 				</div>
 
-			 	<input class="update_record" type="submit" value="Submit">
+			 	<button id="populateForm">Populate Records</button>
 
 			</form>
 		</div>
 	</section>
+	<section>
+		<div class="container results">
+			
+			<div class="column">
+				<h1>Service Record</h1>
+				<div class="name_rank">
+					<ul>
+						<li id="ref_img_link"> </li>
+						<li id="first_name"> </li>
+						<li id="last_name"> </li>
+						<li id="rank"> </li>
+					</ul>
+				</div>
+				<div class="age_height">
+					<ul>
+						<li><p class="title">Age:</p><p id="age"></p></li>
+						<li><p class="title">Height:</p><p id="height"></p></li>
+						<li><p class="title">Date of Birth:</p><p id="dob"><span>/</span><span id="dob_month"></span></p></li>	
+					</ul>
+				</div>		
+				<div class="normal_section">
+					<p class="title">Next of Kin:</p>
+					<ul>			 	
+						<li id="next_of_kin_1"> </li>
+						<li id="next_of_kin_2"> </li>
+					</ul>
+				<div class="normal_section">
+					<p class="title">Residence:</p>
+					<ul>
+						<li id="residence"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Place of Birth:</p>
+					<ul>
+						<li id="place_of_birth"> </li>
+					</ul>
+				</div>
+			</div>
 
+			<div class="column">
+				<div class="normal_section">
+					<p class="title">Primary Specialisation:</p>
+					<ul>
+						<li id="primary_specialisations_1"> </li>
+						<li id="primary_specialisations_2"> </li>
+						<li id="primary_specialisations_3"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Additional Skills:</p>
+					<li id="additional_skills_1"> </li>
+					<li id="additional_skills_2"> </li>
+					<li id="additional_skills_3"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Languages:</p>
+					<li id="languages_1"> </li>
+					<li id="languages_2"> </li>
+					<li id="languages_3"> </li>
+					<li id="languages_4"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Mentors:</p>	
+					<li id="mentors_1"> </li>		
+					<li id="mentors_2"> </li>		
+					<li id="mentors_3"> </li>		
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Additional Information:</p>
+					<li id="additional_info_1"> </li>
+					<li id="additional_info_2"> </li>
+					<li id="additional_info_3"> </li>
+				</ul>
+			</div>
+
+			</div class="column">
+				<div class="normal_section">
+					<p class="title">Notable Positions:</p>
+					<ul>
+						<li id="organisation_1"> </li>
+						<li id="position_11"> </li>
+						<li id="position_12"> </li>
+						<li id="position_13"> </li>
+						<li id="organisation_2"> </li>
+						<li id="position_21"> </li>
+						<li id="position_22"> </li>
+						<li id="position_23"> </li>
+						<li id="organisation_3"> </li>
+						<li id="position_31"> </li>
+						<li id="position_32"> </li>
+						<li id="position_33"> </li>
+						<li id="organisation_4"> </li>
+						<li id="position_41"> </li>
+						<li id="position_42"> </li>
+						<li id="position_43"> </li>
+						<li id="organisation_5"> </li>
+						<li id="position_51"> </li>
+						<li id="position_52"> </li>
+						<li id="position_53"> </li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Discredit Note:</p>
+					<ul>
+						<li id="discredit"> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 </body>
