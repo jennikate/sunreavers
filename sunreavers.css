@@ -116,6 +116,7 @@ body, .instructions {
 	justify-content: center;
   	flex-direction: column;
   	height: 200px;
+  	width: 160px;
 }
 .age_height ul {
 	display: flex;
@@ -211,7 +212,7 @@ h3 {
    Form
 =============================*/
 
-label {
+label, .label {
 	display: block;
 	font-size: 1.1em;
 	margin: 15px 0 3px 0;
@@ -222,10 +223,33 @@ span {
 	font-style: italic;
 }
 
+.nested  {
+	font-size: 0.75em;
+	padding-bottom:20px;
+}
+.nested li label {
+	display: inline-block;
+}
+
 #input_height, #input_age, #input_dob, #input_dob_month {
 	width: 50px;
 }
 
-#input_img_link, #input_residence, #input_place_of_birth {
+#input_img_link, #input_residence, #input_place_of_birth, #input_additional_info_1, #input_additional_info_2, #input_additional_info_3 {
 	width: 400px;
+}
+
+button {
+  margin: 0 0 20px 20px;
+  background: #b61719 ;
+  color: #ffffff;
+  font-size: 0.75em;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover {
+  background: #f2c539;
+  text-decoration: none;
 }
