@@ -3,13 +3,13 @@ $(() => {
 
 	// Buttons
 	const $populateForm = $('#populateForm');
-	const $addPositionButton = $('#add_position');
-	const $addOrganisationButton = $('#add_organisation');
+	const $editForm = $('#editForm');
 	// Form input constants
 	const $input = $('.input');
 	const $input_first_name = $('#input_first_name'); 
 	const $input_last_name = $('#input_last_name'); 
-	const $input_img_link = $('#input_img_link'); 
+	const $input_img_link = $('#input_img_link');
+	const $input_rank = $('#input_rank'); 
 	const $input_age = $('#input_age'); 
 	const $input_height = $('#input_height'); 
 	const $input_dob = $('#input_dob'); 
@@ -61,6 +61,7 @@ $(() => {
 // result constants
 	const $results = $('.results');	
 	const $ref_img_link = $('#ref_img_link');
+	const $img_link = $('#img_link');
 	const $first_name = $('#first_name');
 	const $last_name = $('#last_name');
 	const $rank = $('#rank');
@@ -112,43 +113,43 @@ $(() => {
 	const $discredit_2 = $('#discredit_2'); 
 	const $discredit_3 = $('#discredit_3');
 
-	$addPositionButton.on('click', ()=> {
-		console.log('click');
+	$editForm.on('click', ()=> {
+		$input.show();
+		$results.hide();
 	});
 
 	$results.hide();
 	$populateForm.on('click', ()=> {
 		$input.hide();
 		$results.show();
-		console.log($input_first_name.val());
-		$ref_img_link.text($input_first_name.val());
-		$first_name.text($input_last_name.val());
-		$last_name.text($input_img_link.val());
-		$rank.text($input_age.val());
-		$age.text($input_height.val());
-		$height.text($input_dob.val());
-		$dob.text($input_dob_month.val());
-		$dob_month.text($input_next_of_kin_1.val());
-		$next_of_kin_1.text($input_next_of_kin_2.val());
-		$next_of_kin_2.text($input_residence.val());
-		$residence.text($input_place_of_birth.val());
-		$place_of_birth.text($input_primary_specialisations_1.val());
-		$primary_specialisations_1.text($input_primary_specialisations_2.val());
-		$primary_specialisations_2.text($input_primary_specialisations_3.val());
-		$primary_specialisations_3.text($input_additional_skills_1.val());
-		$additional_skills_1.text($input_additional_skills_2.val());
-		$additional_skills_2.text($input_additional_skills_3.val());
-		$additional_skills_3.text($input_languages_1.val());
-		$languages_1.text($input_languages_2.val());
-		$languages_2.text($iconstnput_languages_3.val());
-		$languages_3.text($input_languages_4.val());
-		$languages_4.text($input_mentors_1.val());
-		$mentors_1.text($input_mentors_2.val());
-		$mentors_2.text($input_mentors_3.val());
-		$mentors_3.text($input_additional_info_1.val());
-		$additional_info_1.text($input_additional_info_2.val());
-		$additional_info_2.text($input_additional_info_3.val());
-		$additional_info_3.text($input_organisation.val());
+		$img_link.attr('src', $input_img_link.val());
+		$first_name.text($input_first_name.val());
+		$last_name.text($input_last_name.val());
+		$rank.text($input_rank.val())
+		$age.text($input_age.val());
+		$height.text($input_height.val());
+		$dob.text($input_dob.val());
+		$dob_month.text($input_dob_month.val());
+		$next_of_kin_1.text($input_next_of_kin_1.val());
+		$next_of_kin_2.text($input_next_of_kin_2.val());
+		$residence.text($input_residence.val());
+		$place_of_birth.text($input_place_of_birth.val());
+		$primary_specialisations_1.text($input_primary_specialisations_1.val());
+		$primary_specialisations_2.text($input_primary_specialisations_2.val());
+		$primary_specialisations_3.text($input_primary_specialisations_3.val());
+		$additional_skills_1.text($input_additional_skills_1.val());
+		$additional_skills_2.text($input_additional_skills_2.val());
+		$additional_skills_3.tex($input_additional_skills_3.val());;
+		$languages_1.textt($input_languages_1.val())
+		$languages_2.text($input_languages_2.val());
+		$languages_3.text($iconstnput_languages_3.val());
+		$languages_4.text($input_languages_4.val());
+		$mentors_1.text($input_mentors_1.val());
+		$mentors_2.text($input_mentors_2.val());
+		$mentors_3.text($input_mentors_3.val());
+		$additional_info_1.text($input_additional_info_1.val());
+		$additional_info_2.text($input_additional_info_2.val());
+		$additional_info_3.text($input_additional_info_3.val());
 		$organisation_1.text($input_organisation_1.val());
 		$position_11.text($input_position_11.val());
 		$position_12.text($input_position_12.val());
