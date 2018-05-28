@@ -63,15 +63,15 @@ body {
 	background-repeat: no-repeat;
 	margin: 10px auto;
 	width: 1000px;
-	/*display: flex;
+	display: flex;
 	background-color: white;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	align-items: stretch;*/
+	align-items: stretch;
 }
 
 .column {
 	width: 30%;
-	margin: 1%
+	background-color: white;
 }
 
