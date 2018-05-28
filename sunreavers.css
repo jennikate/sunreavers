@@ -112,6 +112,11 @@ body {
 	margin-right: 35px;
 }
 
+.instructions {
+	font-family: Ariel, sans-serif;
+	background-color: white;
+}
+
 /*============================
    Fonts
 =============================*/
