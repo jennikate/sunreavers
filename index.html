@@ -272,16 +272,18 @@
 		<div class="container results">
 			
 			<div class="column">
-				<h1>Service Record</h1>
-				<div class="name_rank">
-					<ul>
-						<li id="ref_img_link"> </li>
-						<li id="first_name"> </li>
-						<li id="last_name"> </li>
-						<li id="rank"> </li>
-					</ul>
+				<div class="normal_section">
+					<h1>Service Record</h1>
 				</div>
-				<div class="age_height">
+				<div class="name_rank group">
+						<img id="img_link" src="" alt="character image">
+						<div id="name_block">
+							<p id="first_name"></p>
+							<p id="last_name"></p>
+							<p id="rank"></p>
+						</div>
+				</div>
+				<div class="normal_section age_height">
 					<ul>
 						<li><p class="title">Age:</p><p id="age"></p></li>
 						<li><p class="title">Height:</p><p id="height"></p></li>
@@ -290,95 +292,110 @@
 				</div>		
 				<div class="normal_section">
 					<p class="title">Next of Kin:</p>
-					<ul>			 	
-						<li id="next_of_kin_1"> </li>
-						<li id="next_of_kin_2"> </li>
-					</ul>
+					<p id="next_of_kin_1"></p>
+					<p id="next_of_kin_2"></p>
+				</div>
 				<div class="normal_section">
 					<p class="title">Residence:</p>
-					<ul>
-						<li id="residence"> </li>
-					</ul>
+					<p id="residence"></p>
 				</div>
 				<div class="normal_section">
 					<p class="title">Place of Birth:</p>
+					<p id="place_of_birth"></p>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="normal_section">
+					<p class="title">Primary Specialisations:</p>
 					<ul>
-						<li id="place_of_birth"> </li>
+						<li id="primary_specialisations_1"></li>
+						<li id="primary_specialisations_2"></li>
+						<li id="primary_specialisations_3"></li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Additional Skills:</p>
+					<ul>
+						<li id="additional_skills_1"></li>
+						<li id="additional_skills_2"></li>
+						<li id="additional_skills_3"></li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Languages:</p>
+					<ul>
+						<li id="languages_1"></li>
+						<li id="languages_2"></li>
+						<li id="languages_3"></li>
+						<li id="languages_4"></li>
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Mentors:</p>	
+					<ul>
+						<li id="mentors_1"></li>		
+						<li id="mentors_2"></li>		
+						<li id="mentors_3"></li>		
+					</ul>
+				</div>
+				<div class="normal_section">
+					<p class="title">Additional Information:</p>
+					<ul class="bulleted">
+						<li id="additional_info_1"></li>
+						<li id="additional_info_2"></li>
+						<li id="additional_info_3"></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="column">
 				<div class="normal_section">
-					<p class="title">Primary Specialisation:</p>
-					<ul>
-						<li id="primary_specialisations_1"> </li>
-						<li id="primary_specialisations_2"> </li>
-						<li id="primary_specialisations_3"> </li>
-					</ul>
-				</div>
-				<div class="normal_section">
-					<p class="title">Additional Skills:</p>
-					<li id="additional_skills_1"> </li>
-					<li id="additional_skills_2"> </li>
-					<li id="additional_skills_3"> </li>
-					</ul>
-				</div>
-				<div class="normal_section">
-					<p class="title">Languages:</p>
-					<li id="languages_1"> </li>
-					<li id="languages_2"> </li>
-					<li id="languages_3"> </li>
-					<li id="languages_4"> </li>
-					</ul>
-				</div>
-				<div class="normal_section">
-					<p class="title">Mentors:</p>	
-					<li id="mentors_1"> </li>		
-					<li id="mentors_2"> </li>		
-					<li id="mentors_3"> </li>		
-					</ul>
-				</div>
-				<div class="normal_section">
-					<p class="title">Additional Information:</p>
-					<li id="additional_info_1"> </li>
-					<li id="additional_info_2"> </li>
-					<li id="additional_info_3"> </li>
-				</ul>
-			</div>
-
-			</div class="column">
-				<div class="normal_section">
 					<p class="title">Notable Positions:</p>
 					<ul>
-						<li id="organisation_1"> </li>
-						<li id="position_11"> </li>
-						<li id="position_12"> </li>
-						<li id="position_13"> </li>
-						<li id="organisation_2"> </li>
-						<li id="position_21"> </li>
-						<li id="position_22"> </li>
-						<li id="position_23"> </li>
-						<li id="organisation_3"> </li>
-						<li id="position_31"> </li>
-						<li id="position_32"> </li>
-						<li id="position_33"> </li>
-						<li id="organisation_4"> </li>
-						<li id="position_41"> </li>
-						<li id="position_42"> </li>
-						<li id="position_43"> </li>
-						<li id="organisation_5"> </li>
-						<li id="position_51"> </li>
-						<li id="position_52"> </li>
-						<li id="position_53"> </li>
+						<li id="organisation_1">
+							<ul class="bulleted">
+								<li id="position_11"></li>
+								<li id="position_12"></li>
+								<li id="position_13"></li>
+							</ul>
+						</li>
+						<li id="organisation_2">
+							<ul class="bulleted">
+								<li id="position_21"></li>
+								<li id="position_22"></li>
+								<li id="position_23"></li>
+							</ul>
+						</li>
+						<li id="organisation_3">
+							<ul class="bulleted">
+								<li id="position_31"></li>
+								<li id="position_32"></li>
+								<li id="position_33"></li>
+							</ul>
+						</li>
+						<li id="organisation_3">
+							<ul class="bulleted">
+								<li id="position_31"></li>
+								<li id="position_32"></li>
+								<li id="position_33"></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="normal_section">
 					<p class="title">Discredit Note:</p>
 					<ul>
-						<li id="discredit"> </li>
+						<li id="discredit_1"></li>
+						<li id="discredit_2"></li>
+						<li id="discredit_3"></li>
 					</ul>
 				</div>
+			</div>
+			<div class="instructions">
+				<h3>What Next?</h3>
+				<p>Take a screenshot of your final image (ideally crop it to the edges of the nice background image!), and upload it to Discord.</p>
+				<p>Made a mistake? Fix it by clicking <button>Edit Form</button>.</p>
 			</div>
 		</div>
 	</section>

@@ -6,7 +6,7 @@ $(() => {
 	const $addPositionButton = $('#add_position');
 	const $addOrganisationButton = $('#add_organisation');
 	// Form input constants
-
+	const $input = $('.input');
 	const $input_first_name = $('#input_first_name'); 
 	const $input_last_name = $('#input_last_name'); 
 	const $input_img_link = $('#input_img_link'); 
@@ -118,6 +118,7 @@ $(() => {
 
 	$results.hide();
 	$populateForm.on('click', ()=> {
+		$input.hide();
 		$results.show();
 		console.log($input_first_name.val());
 		$ref_img_link.text($input_first_name.val());

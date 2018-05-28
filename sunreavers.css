@@ -68,9 +68,6 @@ body {
 }
 
 .container {
-	background-image: url("https://cdn.discordapp.com/attachments/177825596951363585/450302939886518272/eversong_woods.jpg");
-	background-color: black;
-	/*background-repeat: no-repeat;*/
 	margin: 10px auto;
 	width: 1000px;
 	height: 768px;
@@ -78,6 +75,10 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: stretch;
+}
+
+.results {
+	background-image: url("https://cdn.discordapp.com/attachments/177825596951363585/450302939886518272/eversong_woods.jpg");
 }
 
 .column {
