@@ -226,6 +226,12 @@ span {
 	font-style: italic;
 }
 
+textarea {
+	vertical-align: top;
+	margin-top: 10px;
+	height: 50px;
+}
+
 .nested  {
 	font-size: 0.75em;
 	padding-bottom:20px;
