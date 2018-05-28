@@ -126,7 +126,7 @@ body, .instructions {
 	margin-right: 35px;
 }
 .age_height span {
-	font-style: none !important;
+	font-style: normal !important;
 }
 
 /*============================
