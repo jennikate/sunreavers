@@ -139,8 +139,8 @@ $(() => {
 		$primary_specialisations_3.text($input_primary_specialisations_3.val());
 		$additional_skills_1.text($input_additional_skills_1.val());
 		$additional_skills_2.text($input_additional_skills_2.val());
-		$additional_skills_3.tex($input_additional_skills_3.val());;
-		$languages_1.textt($input_languages_1.val())
+		$additional_skills_3.text($input_additional_skills_3.val());
+		$languages_1.text($input_languages_1.val());
 		$languages_2.text($input_languages_2.val());
 		$languages_3.text($iconstnput_languages_3.val());
 		$languages_4.text($input_languages_4.val());
