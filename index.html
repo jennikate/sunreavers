@@ -18,148 +18,160 @@
 
 	<section>
 		<div class="container input">
-			<h1>Sunreaver Service Record Creator</h1>
+			<header>
+				<h1>Sunreaver Service Record Creator</h1>
+			</header>
 			<form id="creator" name="creator" method="post" onsubmit="return false;">
 				<div class="form_section">
 					<p>Fill out the details below for your character.</p>
-					<p>For reference or inspiration you can see Kyandrial's and Delabellora's on the right.</p>
+					<p>For reference or inspiration you can see Kyandrial's and Delabellora's on the right (coming soon).</p>
 				</div>
-				<ul>
-					<li>
-						 <label for="input_first_name">First Name</label>
-		 				 <input type="text" name="first_name" id="input_first_name">
-					</li>
-					<li>
-						 <label for="input_last_name">Last Name</label>
-		 				 <input type="text" name="last_name" id="input_last_name">
-					</li>
-					<li>
-						 <label for="input_img_link">Reference Image Link <span>Enter a full URL including the http</span></label>
-		 				 <input type="text" name="img_link" id="input_img_link">
-					</li>
-					<li>
-						 <label for="input_img_link">Rank <span>Sunreaver Guardian, Sunreaver Hawkrider, Sunreaver Apprentice, etc.</span></label>
-		 				 <input type="text" name="rank" id="input_rank">
-					</li>
-					<li>
-						 <label for="input_age">Age</label>
-		 				 <input type="text" name="age" id="input_age">
-					</li>
-					<li>
-						 <label for="input_height">Height <span>In feet/inches</span></label>
-		 				 <input type="text" name="height" id="input_height">
-					</li>
-					<li>
-						 <label for="input_dob">Day and Month of Birth </label>
-		 				 <input class="dob" type="text" name="dob" id="input_dob" placeholder="DD">
-		 				 <input class="dob" type="text" name="dob_month" id="input_dob_month" placeholder="MM">
-		 			</li>						 	
-					<li>
-						 <label for="input_next_of_kin_1">Next of Kin 1</label>
-		 				 <input type="text" name="next_of_kin_1" id="input_next_of_kin_1">
-		 			</li>
-					<li>
-						 <label for="input_next_of_kin_2">Next of Kin 2</label>
-		 				 <input type="text" name="next_of_kin_2" id="input_next_of_kin_2">
-		 			</li>
-					<li>
-						 <label for="input_residence">Residence <span>All Sunreaver's are offered a residence in the dorms, or you may have your own!</span></label>
-		 				 <input type="text" name="residence" id="input_residence">
-		 			</li>
-					<li>
-						 <label for="input_place_of_birth">Place of Birth</label>
-		 				 <input type="text" name="place_of_birth" id="input_place_of_birth">
-		 			</li>
-					<li>
-						<p class="label">Primary Specialisations <span>Your character should have no more than 3 primary specialisation. These are the things they are really focused on being the best at right now.</span></p>
-						<ul class="nested">
-							<li>
-								 <label for="input_primary_specialisations_1">Specialisation 1:</label>
-		 				 		<input type="text" name="primary_specialisations_1" id="input_primary_specialisations_1">
-		 				 	</li>
-							<li>
-								 <label for="input_primary_specialisations_2">Specialisation 2:</label>
-		 				 		<input type="text" name="primary_specialisations_2" id="input_primary_specialisations_2">
-		 				 	</li>
-							<li>
-								 <label for="input_primary_specialisations_3">Specialisation 3:</label>
-		 				 		<input type="text" name="primary_specialisations_3" id="input_primary_specialisations_3">
-		 				 	</li>
-		 				 </ul>
-		 			</li>	
-					<li>
-						<p class="label">Additional Skills <span>Again, only add a maximum of 3 additional skills, these are things that it's valuable to know about the character.</span></p>
-						 <ul class="nested">
-							 <li>
-							 	<label for="input_additional_skills_1">Skill 1:</label>
-		 				 		<input type="text" name="additional_skills_1" id="input_additional_skills_1">
-		 				 	</li>
-							 <li>
-							 	<label for="input_additional_skills_2">Skill 2:</label>
-		 				 		<input type="text" name="additional_skills_2" id="input_additional_skills_2">
-		 				 	</li>
-							 <li>
-							 	<label for="input_additional_skills_3">Skill 3:</label>
-		 				 		<input type="text" name="additional_skills_3" id="input_additional_skills_3">
-		 				 	</li>
-		 				 </ul>
-		 			</li>	
-					<li>
-						 <p class="label">Languages Spoken <span>If you're an Arcane Linguist, note that under Additional Skills and not Languages. Languages should be things that can be understood and spoken without needing magic.</span></p>
-						 <ul class="nested">
-						 	<li>
-						 		<label for="input_languages_1">Language 1:</label>
-		 				 		<input type="text" name="languages_1" id="input_languages_1">
-		 				 	</li>
-		 				 	<li>
-						 		<label for="input_languages_2">Language 2:</label>
-		 				 		<input type="text" name="languages_2" id="input_languages_2">
-		 				 	</li>
-		 				 	<li>
-						 		<label for="input_languages_3">Language 3:</label>
-		 				 		<input type="text" name="languages_3" id="input_languages_3">
-		 				 	</li>
-		 				 	<li>
-						 		<label for="input_languages_4">Language 4:</label>
-		 				 		<input type="text" name="languages_4" id="input_languages_4">
-		 				 	</li>
-		 				 </ul>
-		 			</li>	
-					<li>
-						 <p class="label">Notable Mentors <span>Please keep mentors to no more than three.</span></p>
-						 <ul class="nested">
-						 	<li>
-							 	<label for="input_mentors_1">Mentor 1:</label>
-			 				 	<input type="text" name="mentors_1" id="input_mentors_1">
-			 				 </li>
-						 	<li>
-							 	<label for="input_mentors_2">Mentor 2:</label>
-			 				 	<input type="text" name="mentors_2" id="input_mentors_2">
-			 				 </li>
-						 	<li>
-							 	<label for="input_mentors_3">Mentor 3:</label>
-			 				 	<input type="text" name="mentors_3" id="input_mentors_3">
-			 				 </li>
-		 				 </ul>
-		 			</li>		
-					<li>
-						<p class="label">Notable Mentors <span>Please keep additional information to only a few bullet points. If you find, when you generate the record, that some of your information has been cut off, please try to reduce your Additional Information section - or contact Kyandrial for help.</span></p>
-						<ul class="nested">
-							<li>
-								<label for="input_additional_info_1">Info 1:</label>
-		 				 		<input type="text" name="additional_info_1" id="input_additional_info_1">
-		 				 	</li>
-							<li>
-								<label for="input_additional_info_2">Info 2:</label>
-		 				 		<input type="text" name="additional_info_2" id="input_additional_info_2">
-		 				 	</li>
-							<li>
-								<label for="input_additional_info_3">Info 3:</label>
-		 				 		<input type="text" name="additional_info_3" id="input_additional_info_3">
-		 				 	</li>
-		 				 </ul>
-		 			</li>		 		 	
-				</ul>
+				<div class="form_section">
+					<ul>
+						<li><h3>Character Details</h3></li>
+						<li>
+							 <label for="input_first_name">First Name</label>
+			 				 <input type="text" name="first_name" id="input_first_name">
+						</li>
+						<li>
+							 <label for="input_last_name">Last Name</label>
+			 				 <input type="text" name="last_name" id="input_last_name">
+						</li>
+						<li>
+							 <label for="input_img_link">Reference Image Link <span>Enter a full URL including the http. <br />The best size is height 200px by width 100px, this form will attempt to resize your link to this size.</span></label>
+			 				 <input type="text" name="img_link" id="input_img_link">
+						</li>
+						<li>
+							 <label for="input_img_link">Rank <span>Sunreaver Guardian, Sunreaver Hawkrider, Sunreaver Apprentice, etc.</span></label>
+			 				 <input type="text" name="rank" id="input_rank">
+						</li>
+						<li>
+							 <label for="input_age">Age</label>
+			 				 <input type="text" name="age" id="input_age">
+						</li>
+						<li>
+							 <label for="input_height">Height <span>In feet/inches</span></label>
+			 				 <input type="text" name="height" id="input_height">
+						</li>
+						<li>
+							 <label for="input_dob">Day and Month of Birth </label>
+			 				 <input class="dob" type="text" name="dob" id="input_dob" placeholder="DD">
+			 				 <input class="dob" type="text" name="dob_month" id="input_dob_month" placeholder="MM">
+			 			</li>
+			 			<li>
+							 <label for="input_residence">Residence <span>All Sunreaver's are offered a residence in the dorms, or you may have your own!</span></label>
+			 				 <input type="text" name="residence" id="input_residence">
+			 			</li>
+						<li>
+							 <label for="input_place_of_birth">Place of Birth</label>
+			 				 <input type="text" name="place_of_birth" id="input_place_of_birth">
+			 			</li>
+			 		</ul>
+			 	</div>
+		 		<div class="form_section">
+					<h3>Next of Kin</h3>
+					<p>Enter up to two next of kin.</p>
+					<ul>					 	
+						<li>
+							 <label for="input_next_of_kin_1">Next of Kin 1</label>
+			 				 <input type="text" name="next_of_kin_1" id="input_next_of_kin_1">
+			 			</li>
+						<li>
+							 <label for="input_next_of_kin_2">Next of Kin 2</label>
+			 				 <input type="text" name="next_of_kin_2" id="input_next_of_kin_2">
+			 			</li>
+						
+						<li>
+							<p class="label">Primary Specialisations <span>Your character should have no more than 3 primary specialisation. These are the things they are really focused on being the best at right now.</span></p>
+							<ul class="nested">
+								<li>
+									 <label for="input_primary_specialisations_1">Specialisation 1:</label>
+			 				 		<input type="text" name="primary_specialisations_1" id="input_primary_specialisations_1">
+			 				 	</li>
+								<li>
+									 <label for="input_primary_specialisations_2">Specialisation 2:</label>
+			 				 		<input type="text" name="primary_specialisations_2" id="input_primary_specialisations_2">
+			 				 	</li>
+								<li>
+									 <label for="input_primary_specialisations_3">Specialisation 3:</label>
+			 				 		<input type="text" name="primary_specialisations_3" id="input_primary_specialisations_3">
+			 				 	</li>
+			 				 </ul>
+			 			</li>	
+						<li>
+							<p class="label">Additional Skills <span>Again, only add a maximum of 3 additional skills, these are things that it's valuable to know about the character.</span></p>
+							 <ul class="nested">
+								 <li>
+								 	<label for="input_additional_skills_1">Skill 1:</label>
+			 				 		<input type="text" name="additional_skills_1" id="input_additional_skills_1">
+			 				 	</li>
+								 <li>
+								 	<label for="input_additional_skills_2">Skill 2:</label>
+			 				 		<input type="text" name="additional_skills_2" id="input_additional_skills_2">
+			 				 	</li>
+								 <li>
+								 	<label for="input_additional_skills_3">Skill 3:</label>
+			 				 		<input type="text" name="additional_skills_3" id="input_additional_skills_3">
+			 				 	</li>
+			 				 </ul>
+			 			</li>	
+						<li>
+							 <p class="label">Languages Spoken <span>If you're an Arcane Linguist, note that under Additional Skills and not Languages. Languages should be things that can be understood and spoken without needing magic.</span></p>
+							 <ul class="nested">
+							 	<li>
+							 		<label for="input_languages_1">Language 1:</label>
+			 				 		<input type="text" name="languages_1" id="input_languages_1">
+			 				 	</li>
+			 				 	<li>
+							 		<label for="input_languages_2">Language 2:</label>
+			 				 		<input type="text" name="languages_2" id="input_languages_2">
+			 				 	</li>
+			 				 	<li>
+							 		<label for="input_languages_3">Language 3:</label>
+			 				 		<input type="text" name="languages_3" id="input_languages_3">
+			 				 	</li>
+			 				 	<li>
+							 		<label for="input_languages_4">Language 4:</label>
+			 				 		<input type="text" name="languages_4" id="input_languages_4">
+			 				 	</li>
+			 				 </ul>
+			 			</li>	
+						<li>
+							 <p class="label">Notable Mentors <span>Please keep mentors to no more than three.</span></p>
+							 <ul class="nested">
+							 	<li>
+								 	<label for="input_mentors_1">Mentor 1:</label>
+				 				 	<input type="text" name="mentors_1" id="input_mentors_1">
+				 				 </li>
+							 	<li>
+								 	<label for="input_mentors_2">Mentor 2:</label>
+				 				 	<input type="text" name="mentors_2" id="input_mentors_2">
+				 				 </li>
+							 	<li>
+								 	<label for="input_mentors_3">Mentor 3:</label>
+				 				 	<input type="text" name="mentors_3" id="input_mentors_3">
+				 				 </li>
+			 				 </ul>
+			 			</li>		
+						<li>
+							<p class="label">Additional Information <span>Please keep additional information to only a few bullet points. If you find, when you generate the record, that some of your information has been cut off, please try to reduce your Additional Information section - or contact Kyandrial for help.</span></p>
+							<ul class="nested">
+								<li>
+									<label for="input_additional_info_1">Info 1:</label>
+			 				 		<input type="text" name="additional_info_1" id="input_additional_info_1">
+			 				 	</li>
+								<li>
+									<label for="input_additional_info_2">Info 2:</label>
+			 				 		<input type="text" name="additional_info_2" id="input_additional_info_2">
+			 				 	</li>
+								<li>
+									<label for="input_additional_info_3">Info 3:</label>
+			 				 		<input type="text" name="additional_info_3" id="input_additional_info_3">
+			 				 	</li>
+			 				 </ul>
+			 			</li>		 		 	
+					</ul>
+				</div>
 				<div class="form_section">
 					<h2>Notable Positions - career history</h2>
 					<p>The next section is a place to briefly show off the positions your character has had over their career, and the organisations they've been involved with.</p>
@@ -275,13 +287,13 @@
 				<div class="normal_section">
 					<h1>Service Record</h1>
 				</div>
-				<div class="name_rank group">
-						<img id="img_link" src="" alt="character image">
-						<div id="name_block">
-							<p id="first_name"></p>
-							<p id="last_name"></p>
-							<p id="rank"></p>
-						</div>
+				<div class="name_rank">
+					<img id="img_link" src="" alt="character image">
+					<div id="name_block">
+						<p id="first_name"></p>
+						<p id="last_name"></p>
+						<p id="rank"></p>
+					</div>
 				</div>
 				<div class="normal_section age_height">
 					<ul>
