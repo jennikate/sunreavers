@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sunreaver Guild Service Record</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+	<section>
+		<div class="container">
+			<h1>Character Details</h1>
+			<form id="creator" name="creator" method="post">
+	
+						 <label for="input_first_name">First Name</label>
+		 				 <input type="text" name="first_name" id="input_first_name">
+	
+						 <label for="input_last_name">Last Name</label>
+		 				 <input type="text" name="last_name" id="input_last_name">
+	
+						 <label for="input_ref_img_link">Reference Image Link</label>
+		 				 <input type="text" name="ref_img_link" id="input_ref_img_link">
+
+		 				<input class="update_record" type="submit" value="Submit">
+
+			</form>
+			<p id="results">Results: </p>
+		</div>
+	</section>
+
+
+<script>
+  function catchValues() {
+    var firstName = 
+  }
+
+
+
+  	$(".update_record").click(showValues);
+  	console.log(showValues);
+  showValues();
+</script>
+
+
+</body>
+</html>
