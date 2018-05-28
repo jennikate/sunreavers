@@ -1,9 +1,10 @@
 $(() => {
 	console.log('JS works');
-	const $results = $('.results');	
-	const $populateForm = $('#populateForm');
-	$results.hide();
 
+	// Buttons
+	const $populateForm = $('#populateForm');
+	const $addPositionButton = $('#add_position');
+	const $addOrganisationButton = $('#add_organisation');
 	// Form input constants
 
 	const $input_first_name = $('#input_first_name'); 
@@ -33,12 +34,32 @@ $(() => {
 	const $input_additional_info_1 = $('#input_additional_info_1'); 
 	const $input_additional_info_2 = $('#input_additional_info_2'); 
 	const $input_additional_info_3 = $('#input_additional_info_3'); 
-	const $input_organisation = $('#input_organisation'); 
-	const $input_position = $('#input_position'); 
-	const $input_discredit = $('#input_discredit'); 
+	const $input_organisation_1 = $('#input_organisation_1'); 
+	const $input_position_11 = $('#input_position_11');
+	const $input_position_12 = $('#input_position_12'); 
+	const $input_position_13 = $('#input_position_13'); 
+	const $input_organisation_2 = $('#input_organisation_2'); 
+	const $input_position_21 = $('#input_position_21');
+	const $input_position_22 = $('#input_position_22'); 
+	const $input_position_23 = $('#input_position_23');
+	const $input_organisation_3 = $('#input_organisation_3'); 
+	const $input_position_31 = $('#input_position_31');
+	const $input_position_32 = $('#input_position_32'); 
+	const $input_position_33 = $('#input_position_33');
+	const $input_organisation_4 = $('#input_organisation_4'); 
+	const $input_position_41 = $('#input_position_41');
+	const $input_position_42 = $('#input_position_42'); 
+	const $input_position_43 = $('#input_position_43');
+	const $input_organisation_5 = $('#input_organisation_5'); 
+	const $input_position_51 = $('#input_position_51');
+	const $input_position_52 = $('#input_position_52'); 
+	const $input_position_53 = $('#input_position_53');
+	const $input_discredit_1 = $('#input_discredit_1');
+	const $input_discredit_2 = $('#input_discredit_2'); 
+	const $input_discredit_3 = $('#input_discredit_3');  
 
 // result constants
-
+	const $results = $('.results');	
 	const $ref_img_link = $('#ref_img_link');
 	const $first_name = $('#first_name');
 	const $last_name = $('#last_name');
@@ -67,12 +88,36 @@ $(() => {
 	const $additional_info_1 = $('#additional_info_1');
 	const $additional_info_2 = $('#additional_info_2');
 	const $additional_info_3 = $('#additional_info_3');
-	const $organisation = $('#organisation');
-	const $position = $('#position');
+	const $organisation_1 = $('#organisation_1'); 
+	const $position_11 = $('#position_11');
+	const $position_12 = $('#position_12'); 
+	const $position_13 = $('#position_13'); 
+	const $organisation_2 = $('#organisation_2'); 
+	const $position_21 = $('#position_21');
+	const $position_22 = $('#position_22'); 
+	const $position_23 = $('#position_23');
+	const $organisation_3 = $('#organisation_3'); 
+	const $position_31 = $('#position_31');
+	const $position_32 = $('#position_32'); 
+	const $position_33 = $('#position_33');
+	const $organisation_4 = $('#organisation_4'); 
+	const $position_41 = $('#position_41');
+	const $position_42 = $('#position_42'); 
+	const $position_43 = $('#position_43');
+	const $organisation_5 = $('#organisation_5'); 
+	const $position_51 = $('#position_51');
+	const $position_52 = $('#position_52'); 
+	const $position_53 = $('#position_53');
+	const $discredit_1 = $('#discredit_1');
+	const $discredit_2 = $('#discredit_2'); 
+	const $discredit_3 = $('#discredit_3');
 
+	$addPositionButton.on('click', ()=> {
+		console.log('click');
+	});
 
+	$results.hide();
 	$populateForm.on('click', ()=> {
-		console.log('click')
 		$results.show();
 		console.log($input_first_name.val());
 		$ref_img_link.text($input_first_name.val());
@@ -103,7 +148,29 @@ $(() => {
 		$additional_info_1.text($input_additional_info_2.val());
 		$additional_info_2.text($input_additional_info_3.val());
 		$additional_info_3.text($input_organisation.val());
-		$organisation.text($input_position.val());
-		$position.text($input_discredit.val());
+		$organisation_1.text($input_organisation_1.val());
+		$position_11.text($input_position_11.val());
+		$position_12.text($input_position_12.val());
+		$position_13.text($input_position_13.val());
+		$organisation_2.text($input_organisation_2.val());
+		$position_21.text($input_position_21.val());
+		$position_22.text($input_position_22.val());
+		$position_23.text($input_position_23.val());
+		$organisation_3.text($input_organisation_3.val());
+		$position_31.text($input_position_31.val());
+		$position_32.text($input_position_32.val());
+		$position_33.text($input_position_33.val());
+		$organisation_4.text($input_organisation_4.val());
+		$position_41.text($input_position_41.val());
+		$position_42.text($input_position_42.val());
+		$position_43.text($input_position_43.val());
+		$organisation_5.text($input_organisation_5.val());
+		$position_51.text($input_position_51.val());
+		$position_52.text($input_position_52.val());
+		$position_53.text($input_position_53.val());
+		$discredit_1.text($input_discredit_1.val());
+		$discredit_2.text($input_discredit_2.val());
+		$discredit_3.text($input_discredit_3.val());
+		
 	});
 });
